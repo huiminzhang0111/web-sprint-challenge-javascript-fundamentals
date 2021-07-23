@@ -26,13 +26,33 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
 
+- .map: iterates through all items in the given iterable and executes the function() we passed as an argument on each of them. Use map when you want to transform elements in an array.
+
+- .reduce: to reduce the array to one single value. Use reduce when you want to derive a single value from multiple elements in an array.
+
+- .filter: it executes the callback and check its return value. If the value is true element remains in the resulting array but if the return value is false element will be removed from the array. Also, it will update the existing array but return a new filtered array every time. Use filter when you want to select a subset of multiple elements from an array.
+
 2. Explain the difference between a callback and a higher order function.
+
+- a callback function is a function that is passed to another function with the expectation that the other function will call it, while a higher order function is a function that takes another function(s) as an argument(s) and/or returns a function to its caller. 
 
 3. Explain what a closure is.
 
+- closure gives you access to an outer function's scope from an inner function. 
+
 4. Describe the four principles of the 'this' keyword.
 
+- window/global object binding: when in global scope, the value of 'this' will be the window/console object.
+
+- implicit binding: whenever a preceeding dot calls a function, the object before the dot is 'this'.
+
+- new binding: whenever we use a constructor function, 'this' refers to the specific instance of the object that's created and returned by the constructor function. 
+
+- explicit binding: whenever we use js'call/ apply method, 'this' is explicitly defined.
+
 5. Why do we need super() in an extended class?
+
+- if you are going to use extend, super() needs to be called from within the constructor. This is to pass any new attributes back up to the constructor of the parent object. 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
